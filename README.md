@@ -11,19 +11,22 @@ Again, there isn't anything "tricky" about this repo, the application should run
 
 ## Basic Tasks
 
-- [ ] Fork this repo into your Github account
-- [ ] Get application up and running.
-- [ ] Fix this list so it justify to the left without losing the format of the rest of page.
-- [ ] Go to route /products and tell me specifically what is wrong, if anything, and fix it.
-- [ ] Create a resourceful Controller for an object called Review.
-- [ ] Add a route that points to your Review Controller and have it return a new blade view
-- [ ] Can you explain to me why the route /specials is failing and fix it.
-- [ ] What version of Laravel is this application using?
+- [x] Fork this repo into your Github account
+- [x] Get application up and running.
+- [x] Fix this list so it justify to the left without losing the format of the rest of page.
+- [x] Go to route /products and tell me specifically what is wrong, if anything, and fix it.
+     - Misspelled the word index
+- [x] Create a resourceful Controller for an object called Review.
+- [x] Add a route that points to your Review Controller and have it return a new blade view
+- [x] Can you explain to me why the route /specials is failing and fix it.
+    - The GET method is not supported for this route. Supported methods: POST.
+- [x] What version of Laravel is this application using?
+    - Laravel 5.8
 
 ## Simple Tasks
 
-- [ ] Populate a database with tables for the project.
-- [ ] Add some tests to the repo to automate testing of the application.
+- [x] Populate a database with tables for the project.
+- [x] Add some tests to the repo to automate testing of the application.
 - [ ] Upgrade this application to the current version of Laravel and assure that everything is still working. If it's not, fix it.
 - [ ] Add User authentication to application, including User Registration and User Login pages.
 - [ ] Make it so users must validate their email address before they are able to log in.
