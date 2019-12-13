@@ -29,8 +29,8 @@ Again, there isn't anything "tricky" about this repo, the application should run
 - [x] Add some tests to the repo to automate testing of the application.
 - [x] Upgrade this application to the current version of Laravel and assure that everything is still working. If it's not, fix it.
 - [x] Add User authentication to application, including User Registration and User Login pages.
-- [ ] Make it so users must validate their email address before they are able to log in.
-- [ ] If you haven't already done so, `seed` your database with data.
+- [x] Make it so users must validate their email address before they are able to log in.
+- [x] If you haven't already done so, `seed` your database with data.
 - [ ] Create an API Endpoint that generates a JSON response of all Products.
 - [ ] Create a new branch in your repo and call it `tailwind`. On this branch, upgrade the site to use TailwindCSS.
 
