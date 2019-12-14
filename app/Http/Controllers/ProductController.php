@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Cart;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -32,7 +33,7 @@ class ProductController extends Controller
      * be fired over Skype on your birthday.
      *
      */
-    public function cart($id)
+    public function cart($id, Cart $cart)
     {
         $product = Product::find($id);
 
@@ -40,17 +41,7 @@ class ProductController extends Controller
             about(404);
         };
 
-        $cart = session()->get('cart');
-
-        $quantity = $cart[ $id ][ 'quantity' ] ?? 1;
-
-        $cart[ $id ] = [
-            'name'     => $product->name,
-            'quantity' => $quantity,
-            'price'    => $product->price
-        ];
-
-        session()->put('cart', $cart);
+        $cart->add($product);
 
         return redirect()->back()->with('status', 'Product added to cart successfully');
     }
