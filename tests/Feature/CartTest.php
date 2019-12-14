@@ -18,6 +18,7 @@ class CartTest extends TestCase
      */
     public function testViewCart()
     {
+        $this->withoutExceptionHandling();
         $response = $this->get('/');
 
         $response->assertStatus(200);
