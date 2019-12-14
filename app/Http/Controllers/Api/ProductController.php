@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Resources\GetProduct;
+use App\Http\Resources\ProductCollection;
 use App\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -16,7 +16,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return new GetProduct(Product::get());
+        return new ProductCollection(Product::get());
     }
 
     /**

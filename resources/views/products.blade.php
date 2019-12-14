@@ -38,9 +38,7 @@
                                     <div class="col-4">{{ $product->description }}</div>
                                     <div class="col-2">
                                         ${{ number_format($product->price/100, 2, '.', ' ') }} <br>
-                                        <a href="{{ route('cart', [$product->id]) }}">
-                                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                                        </a>
+                                        <addtocart-btn product-id="{{$product->id}}"></addtocart-btn>
                                     </div>
                                 </div>
                             @endforeach

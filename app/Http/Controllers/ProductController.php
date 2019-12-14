@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Cart;
 use App\Product;
+use App\Http\Resources\Product as ProductResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
@@ -43,7 +44,7 @@ class ProductController extends Controller
 
         $cart->add($product);
 
-        return redirect()->back()->with('status', 'Product added to cart successfully');
+        return new ProductResource($product);
     }
 
     public function checkout()
