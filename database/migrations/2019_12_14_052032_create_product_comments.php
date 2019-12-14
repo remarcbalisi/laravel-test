@@ -15,6 +15,12 @@ class CreateProductComments extends Migration
     {
         Schema::create('product_comments', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->longText('comment');
+            $table->unsignedBigInteger('user_id');
+            $table->uuid('product_id');
+
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('product_id')->references('id')->on('products');
             $table->timestamps();
         });
     }
