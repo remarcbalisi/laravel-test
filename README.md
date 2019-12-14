@@ -38,7 +38,7 @@ Again, there isn't anything "tricky" about this repo, the application should run
 
 - [x] Sign your commits using a GPG key.
 - [x] When adding additional items to the cart of something that had already been added, it is only registering a quantity of 1. Fix this. 
-- [ ] Add VueJS to project and make the `Add to cart` a Vue Component that keeps you on the page when adding products to your cart.
+- [x] Add VueJS to project and make the `Add to cart` a Vue Component that keeps you on the page when adding products to your cart.
 - [ ] Upgrade the IDs for products to be UUIDs. Assure everything still works, adding to cart, purchase, and reviews.
 - [ ] Add a pivot table to allow users to leave comments of products. No need to create the interfaces with this, as long as it works in tinker. 
 
